@@ -1,5 +1,23 @@
 require 'pry'
 
+holiday_hash = 
+{
+  :winter => {
+    :christmas => ["Lights", "Wreath"],
+    :new_years => ["Party Hats"]
+  },
+  :summer => {
+    :fourth_of_july => ["Fireworks", "BBQ"]
+  },
+  :fall => {
+    :thanksgiving => ["Turkey"]
+  },
+  :spring => {
+    :memorial_day => ["BBQ"]
+  }
+}
+
+
 def second_supply_for_fourth_of_july(holiday_hash)
   # given that holiday_hash looks like this:
   # {
@@ -61,7 +79,6 @@ def all_supplies_in_holidays(holiday_hash)
 
   holiday_hash.each do |season, holidays|
     puts "#{season.capitalize}:"
-    binding.pry
     holidays.each do |holiday, items|
       print "#{holiday.capitalize}: "
       puts items.join(", ")
@@ -77,3 +94,5 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
 
 end
+
+binding.pry
