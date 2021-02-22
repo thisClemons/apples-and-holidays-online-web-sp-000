@@ -1,6 +1,6 @@
 require 'pry'
 
-holiday_hash = 
+holiday_hash =
 {
   :winter => {
     :christmas => ["Lights", "Wreath"],
