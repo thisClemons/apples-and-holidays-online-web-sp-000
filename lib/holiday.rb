@@ -99,6 +99,7 @@ def all_holidays_with_bbq(holiday_hash)
       bbqDays.pop(holiday) if supply.include?("BBQ")
     end
   end
+  bbqDays
 end
 
 #binding.pry
