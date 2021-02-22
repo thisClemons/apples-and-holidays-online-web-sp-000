@@ -1,4 +1,4 @@
-#require 'pry'
+require 'pry'
 
 holiday_hash =
 {
